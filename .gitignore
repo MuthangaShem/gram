@@ -1,0 +1,4 @@
+database.db
+virtual/
+__pycache__/
+*.pyc

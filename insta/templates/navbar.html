@@ -1,0 +1,44 @@
+{% load static %}
+<nav class="navbar navbar-expand-sm fixed-top" style="background-color: black; border-color: white;">
+    <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav" style="margin-left: 0">
+                <a class="navbar-brand " href="/">
+                    <img src="{% static 'images/insta.png'%}" class="img-fluid" style="height: 40px; border-right: solid grey 2px;padding-right: 10px;line-height: 5px;"> <span style="font-family: 'Skranji', cursive; ">Gram</span> 
+                </a>
+                <form class="form-inline my-2 my-lg-0" role="search" action="{% url 'search' %}">
+                    <input class="form-control mr-sm-2" type="search"  id="search" placeholder="Search" aria-label="Search" name="profile">
+                </form> 
+                <ul class="nav justify-content-end form-inline">
+                
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <img src="{% static 'images/instaheart.svg'%}" class="img-fluid small">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'profile' user.id %}">
+                            <img src="{% static 'images/male.svg'%}" class="img-fluid small">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'post'%}"><input type="button" value="+ Add Post" class="btn btn-outline-secondary"></a>
+                    </li>
+                </ul>
+            </div>
+        <a href="http://www.github.com/muthangashem">
+            <img src="{% static 'images/github.svg'%}" class="img-fluid small" style="margin-right: 10px;">
+        </a>
+
+         <a href="http://www.djangoproject.com/">
+            <img src="https://www.djangoproject.com/m/img/badges/djangomade124x25.gif" border="0" alt="Made with Django." title="Made with Django." style="align-content: right" />
+        </a>
+        
+    </div>
+</nav>

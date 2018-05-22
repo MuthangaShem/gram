@@ -1,0 +1,34 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 900px !important;
+  }
+}
+.small{
+    /* border: red solid 10px; */
+    height:30px;
+}
+.main{
+  margin-top: 80px;
+  padding-bottom: 20px;
+}
+.profile{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.small-profile{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+input[type="file"] {
+    align-items: baseline;
+    color: blue;
+    text-align: start !important;
+}
+
+.Post{
+  /* border-radius: 50%; */
+  width: 35vh;
+  height: 30vh;
+}

@@ -1,0 +1,25 @@
+{%extends "registration/base.html"%} {% load bootstrap4 %}{% load static%}
+{% block content %}
+
+<div class="container-fluid" style="background-image:url('/static/images/sunset.jpg');height: 100vh; background-position: center; background-size: cover; position: center; ">
+        <div class="row ">
+            <div class="col-md-4" style="margin-top: -10%; position:absolute; left: 50%; transform: translate(-50%,50%);width: 400px; height: 400px; background: rgba(0,0,0,0.5); box-sizing: border-box; box-shadow: 0 15px 25px rgba(0,0,0,0.5)">
+                <div class="card-body">
+                    <h3 class="card-title text-center" style="font-family: 'Skranji', cursive; color: white;">Gram</h3>
+                    <h4 class="card-title text-center" style="font-family: 'Bitter', cursive; color: white;">Please Register:</h4><hr style="border-color: white">
+                    <form action="/accounts/register/" method="post" style="margin-top: 0;">
+                        {% csrf_token %} {% bootstrap_form form layout='inline'%}
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-outline-info" value="Sign Up">
+                        </div>
+                    
+                        <input type="hidden" name="next" value="{{next}}">
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

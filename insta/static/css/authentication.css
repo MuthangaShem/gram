@@ -1,0 +1,8 @@
+.main{
+    background-image: url('/static/images/sunset.jpg');
+
+}
+body {
+    background: url("./static/images/user.png") no-repeat!important;
+}
+

@@ -1,0 +1,24 @@
+{% load bootstrap4%}
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block styles%}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="{% static 'images/insta1.png'%}" type="image/x-icon">
+        {% bootstrap_css%}
+        <link href="https://fonts.googleapis.com/css?family=Bitter|Skranji" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/authentication.css'%}">
+    {% endblock%}
+    <title>Insta</title>
+</head>
+<body style="padding: 0; margin: 0;">
+    {% block content%}
+    {% endblock %}
+    {% block scripts %}
+        {% bootstrap_javascript jquery='full' %}
+    {% endblock %}
+</body>
+</html>
